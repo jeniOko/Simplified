@@ -14,6 +14,6 @@ has_appointments = False
 for appointment in appointments:
   if today.strftime('%Y-%m-%d') in appointment:
     has_appointments = True
-    print(appointment)
+    print(appointment[13:])
 if not has_appointments:
   print("You don't have any appointments today but you can book with us")
